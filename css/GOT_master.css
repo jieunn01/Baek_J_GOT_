@@ -33,7 +33,7 @@ main {
 	height:360px;
 	background-color:grey;
 	margin:0 auto;
-	/*overflow:hidden;*/
+	overflow:hidden; /*옆으로 나오는 이미지 없어지고 하나로 합쳐짐*/
 }
 
 #houseImages { position:relative; width:4000px; transition: all .5s; }
