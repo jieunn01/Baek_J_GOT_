@@ -1,5 +1,5 @@
 (() => {
-  console.log('fired');
+  console.log();
 
   // variables at the top
   const sigils = document.querySelector('#navList'),
@@ -95,34 +95,29 @@
     }
   }
 
-  sigils.addEventListener('click', animateBanner);
-  sigils.addEventListener('click', popLightBox);
-
-  function playPauseButton() {
-      if (!video.paused == true) {
-          buttons[0].innerHTML = "play";
-          video.pause()
+  function buttonSetUp() {
+      if (!vid.paused == true) {
+          vid.pause();
         } else {
-          buttons[0].innerHTML = "pause";
-          video.play()
+          vid.play();
       }
   }
 
   function controllers() {
-      video.volume = this.value/100;
+      vid.volume = this.value/100;
    }
 
    function stopMute() {
-        if (!video.muted) {
-          video.muted = true;
-          buttons[1].innerHTML = "unmute";
+        if (!vid.muted) {
+          vid.muted = true;
         } else {
-          video.muted = false;
-          buttons[1].innerHTML = "mute";
+          vid.muted = false;
         }
     }
 
-  buttons[0].addEventListener("click", playPauseButton);
-  buttons[1].addEventListener("click", stopMute);
+  sigils.addEventListener('click', animateBanner);
+  sigils.addEventListener('click', popLightBox);
+  buttons.addEventListener("click", buttonSetUp);
+  buttons.addEventListener("click", stopMute);
   volume.addEventListener('input', controllers);
 })();
