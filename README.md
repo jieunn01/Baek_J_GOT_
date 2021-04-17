@@ -1,8 +1,12 @@
+<img src="images/stark.jpg" alt="GOT image" width="600px">
+
 ## Game of Thrones
 
 When you click the logo for each shield, you can see the description and videos. The main banner image would be changing for each shield.
 
-### Programes 
+Select your best shield!
+
+### Programes Used
 
 - HTML
 - CSS 3
@@ -15,4 +19,4 @@ When you click the logo for each shield, you can see the description and videos.
 
 ### License
 
-MIT license
+MIT License
