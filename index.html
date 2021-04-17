@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>DOM Traversal</title>
+<title>Game of Thrones</title>
 <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
 </head>
@@ -33,12 +33,19 @@
         </ul>
     </nav>
 
-    <h1>clever tagline goes here</h1><!-- replace this with the house name -->
+    <h1>SHEILDS</h1><!-- replace this with the house name -->
 
-    <p class="house-info"></p><!-- replace this with house details (github gist) -->
+    <p class="house-info">Refer to the description below for which shield is suitable for you.</p><!-- replace this with house details (github gist) -->
     <section class="lightbox">
-        <a href="#" class="close">X</a>
-        <video src="video/House-Stark.mp4" controls></video>
+
+        <a href="#" class="close">X</span>
+
+        <video class="lightBoxVideo" src="video/House-Stark.mp4" controls></video>
+        <button class="button">Pause</button>
+        <input type="range" value="100" min="1" max="100" class="volume">
+        <label for="volume" class="labelVolume">Volume</label>
+        <button class="button">Mute</button>
+
     </section>
 </main>  <!--end mainContainer-->
 
